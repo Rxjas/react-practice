@@ -6,6 +6,8 @@ function App() {
   return (
     <>
     <Header myTitle = "go time">
+      <h1>Test time</h1>
+    </Header>
     <Message></Message>
     <Message2></Message2>
     <h1>Test Hooray</h1>
