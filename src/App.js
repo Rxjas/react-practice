@@ -5,7 +5,7 @@ import { Message, Message2 } from './message'
 function App() {
   return (
     <>
-    <Header></Header>
+    <Header myTitle = "go time">
     <Message></Message>
     <Message2></Message2>
     <h1>Test Hooray</h1>
