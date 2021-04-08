@@ -1,10 +1,10 @@
 import React from 'react';
 
-const headerData = {text: 'Hello object', text: 'World Object', text: 'HEADer Object'};
+const headerData = {text: 'Hello object', text1: 'World Object', text2: 'HEADer Object'};
 const headerData2= [{text: 'Hello'}, {text: 'World'}, {text: 'HEADer'}];
 
 function Header2 (props){
-  console.log(Object.keys(props.text))
+//   console.log(Object.keys(props.text))
 
     return(
         <>
@@ -18,9 +18,9 @@ function Header2 (props){
         </div> */}
 
         <div>
-         {Object.keys(props.text).map((key) => {
+         {Object.keys(headerData).map((key) => {
              return(
-                 <li >{props.text[key]}</li>
+                 <li >{headerData[key]}</li>
              )
          })}
         </div>

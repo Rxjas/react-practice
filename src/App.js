@@ -21,7 +21,7 @@ function App() {
         ></Header2>
       )
     })} */}
-    <Header2 title='Header2 text' text={headerData} ></Header2>
+    <Header2 title='Header2 text' ></Header2>
 
     <Header myTitle = "go time">
       <h1>Test time</h1>
