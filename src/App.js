@@ -5,7 +5,8 @@ class App extends React.Component {
     super();
 
     this.state = {
-      count: 0 
+      count: 0,
+      message: "Hello World" 
     };
 
     this.name = "testet tester"
@@ -17,6 +18,8 @@ class App extends React.Component {
       <div>
         Your count is: {this.state.count}
         <button onClick={() => this.setState({ count: ++this.state.count })}>Increment count</button>
+        <button onClick={() => this.setState({ count: --this.state.count })}>Decrease count</button>
+        <h3>{this.state.message}</h3>
       </div>
     )
   }
