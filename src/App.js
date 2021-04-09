@@ -5,7 +5,7 @@ class App extends React.Component{
   render(){
     return (
       <div>
-        <Header/>
+        <button>Fetch Users</button>
       </div>
     )
 }
