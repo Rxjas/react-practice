@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 class App extends React.Component{
   state = {
-    firstName: '',
-    lastName: ''
+    firstName: 'John',
+    lastName: 'Doe'
   }
-  
+
   handleLogin = (event) => {
    event.preventDefault();
   };
@@ -17,8 +17,8 @@ class App extends React.Component{
       <h1>Login</h1>
 
       <form>
-        <input type='text' placeholder='First Name'></input>
-        <input type='text' placeholder='Last Name'></input>
+        <input type='text' placeholder='First Name' value={this.state.firstName}></input>
+        <input type='text' placeholder='Last Name' value={this.state.lastName}></input>
         <button onClick={this.handleLogin}>Submit</button>
       </form>
       
