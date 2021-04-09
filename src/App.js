@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
 class App extends React.Component{
-
-  handleLogin = () => {
-
+  state = {
+    firstName: '',
+    lastName: ''
+  }
+  
+  handleLogin = (event) => {
+   event.preventDefault();
   };
 
   render(){
